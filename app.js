@@ -2,6 +2,7 @@ const days = document.getElementById('days');
 const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
+const title = document.getElementById('title')
 
 const currentYear = new Date().getFullYear();
 
@@ -40,12 +41,14 @@ function updateCountdownTime() {
 const updateTime = setInterval(updateCountdownTime, 1000);
 
 function updateNewYears() {
-    clearInterval(updateTime);
-    hours.innerHTML = "It's"
-    minutes.innerHTML = '2022!'
-    days.innerHTML = ''
-    seconds.innerHTML = ''
+    hours.innerHTML = "Give"
+    minutes.innerHTML = 'You'
+    days.innerHTML = 'Gonna'
+    seconds.innerHTML = 'Up!'
+    title.innerHTML = 'Never'
 }
+
+clearInterval(updateTime);
 
 var newyearsfire = new Date("January 1 2022 00:00:00").getTime()
 currentTimes = new Date().getTime()
