@@ -41,14 +41,13 @@ function updateCountdownTime() {
 const updateTime = setInterval(updateCountdownTime, 1000);
 
 function updateNewYears() {
+    clearInterval(updateTime);
     hours.innerHTML = "Give"
     minutes.innerHTML = 'You'
     days.innerHTML = 'Gonna'
     seconds.innerHTML = 'Up!'
     title.innerHTML = 'Never'
 }
-
-clearInterval(updateTime);
 
 var newyearsfire = new Date("January 1 2022 00:00:00").getTime()
 currentTimes = new Date().getTime()
