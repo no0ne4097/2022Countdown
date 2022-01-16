@@ -4,8 +4,6 @@ const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 const title = document.getElementById('title')
 
-const currentYear = new Date().getFullYear();
-
 const newYearTime = new Date('March 1 2022 00:00:00');
 
 // Update Countdown
@@ -36,7 +34,9 @@ function updateNewYears() {
     window.location.replace("https://www.youtube.com/watch?v=xvFZjo5PgG0");
 }
 
-const newyearsfire = new Date("March 1 2022 00:00:00").getTime()
-currentTimes = new Date().getTime()
-subtractMilliSecondsValue = newyearsfire - currentTimes;
+var newyearsfire = new Date('March 1 2022 00:00:00').getTime()
+currentTime = new Date().getTime()
+subtractMilliSecondsValue = newyearsfire - currentTime;
 setTimeout(updateNewYears, subtractMilliSecondsValue);
+
+
