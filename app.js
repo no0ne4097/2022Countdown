@@ -6,21 +6,7 @@ const title = document.getElementById('title')
 
 const currentYear = new Date().getFullYear();
 
-const newYearTime = new Date(`March 1 2022 00:00:00`);
-
-const today = new Date();
-const month = today.getMonth() + 1;
-const year = today.getFullYear();
-const date = today.getDate();
-const currentDate = `${month} ${date} ${year}`
-
-const hour = today.getHours();
-const minute = today.getMinutes();
-const second = today.getSeconds();
-const nowTime = `${hour}:${minute}:${second}`
-
-const currentTimeDate = `${currentDate} ${nowTime}`
-console.log(currentTimeDate);
+const newYearTime = new Date('March 1 2022 00:00:00');
 
 // Update Countdown
 function updateCountdownTime() {
@@ -50,7 +36,7 @@ function updateNewYears() {
     window.location.replace("https://www.youtube.com/watch?v=xvFZjo5PgG0");
 }
 
-var newyearsfire = new Date("March 1 2022 00:00:00").getTime()
-currentTimes = new Date().getTime()
-subtractMilliSecondsValue = newyearsfire - currentTimes;
-setTimeout(updateNewYears, subtractMilliSecondsValue);
+// var newyearsfire = new Date("March 1 2022 00:00:00").getTime()
+// currentTimes = new Date().getTime()
+// subtractMilliSecondsValue = newyearsfire - currentTimes;
+// setTimeout(updateNewYears, subtractMilliSecondsValue);
