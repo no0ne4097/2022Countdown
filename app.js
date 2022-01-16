@@ -36,7 +36,7 @@ function updateNewYears() {
     window.location.replace("https://www.youtube.com/watch?v=xvFZjo5PgG0");
 }
 
-// var newyearsfire = new Date("March 1 2022 00:00:00").getTime()
-// currentTimes = new Date().getTime()
-// subtractMilliSecondsValue = newyearsfire - currentTimes;
-// setTimeout(updateNewYears, subtractMilliSecondsValue);
+var newyearsfire = new Date("March 1 2022 00:00:00").getTime()
+currentTimes = new Date().getTime()
+subtractMilliSecondsValue = newyearsfire - currentTimes;
+setTimeout(updateNewYears, subtractMilliSecondsValue);
